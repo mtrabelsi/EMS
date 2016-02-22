@@ -1,27 +1,26 @@
 var app =  angular.module('module.app',
-										[
-										'ngTable',
-										'mgcrea.ngStrap',
-										'ngAnimate',
-										'ui.router',
-										'ui.router.title',
+                                        [
+                                        'ngTable',
+                                        'mgcrea.ngStrap',
+                                        'ngAnimate',
+                                        'ui.router',
+                                        'ui.router.title',
 
-										'module.login',
-										'Const',
-										'module.student',
-										'module.toolbar',
-										'module.level',
-										'module.payment',
-										'module.user',
-										'module.history',
-										'module.cheque',
-										'module.daily'
-										]);
+                                        'module.login',
+                                        'Const',
+                                        'module.student',
+                                        'module.toolbar',
+                                        'module.level',
+                                        'module.payment',
+                                        'module.user',
+                                        'module.history',
+                                        'module.cheque',
+                                        'module.daily'
+                                        ]);
 
 app.directive("csDateToIso", function () {
 
     var linkFunction = function (scope, element, attrs, ngModelCtrl) {
-
         ngModelCtrl.$parsers.push(function (datepickerValue) {
             return moment(datepickerValue).format("YYYY-MM-DD");
         });

@@ -1,18 +1,19 @@
 
 
 <button ng-click="loadInsertedStudent()" type="button" class="btn btn-primary pull-right" data-animation="am-fade-and-scale" data-template="frontend/components/student/views/student.create.html" data-placement="center" bs-modal="modal">
-    <i class="fa fa-user-plus"></i> Créer Eleve
+    <i class="fa fa-user-plus"></i> Créer Employé
 </button>
 
 <br/><br/>
 <table ng-table="tableParams"  class="table table-bordered table-hover">
      <tr ng-repeat="student in $data">
-         <td title="'Niveau'" class="ng-table-group" filter="{ '_levelId': 'select' }" filter-data="levels" sortable="'_levelId'">
+         <td title="'Métier'" class="ng-table-group" filter="{ '_levelId': 'select' }" filter-data="levels" sortable="'_levelId'">
            {{student._levelId}}
           </td>
+          <!--
          <td title="'Classe'" class="ng-table-group" filter="{ 'class': 'select' }" filter-data="classes" sortable="'class'">
            {{student.class}}
-          </td>
+          </td> -->
          <td title="'Nom'" class="ng-table-group" filter="{ 'firstname': 'text' }" sortable="'firstname'">
            {{student.firstname}}
           </td>

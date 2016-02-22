@@ -23,11 +23,11 @@ if($rootScope.user.object.admin==true){
        window.print();
   }}));
 
-  admin.append(new gui.MenuItem({ label: 'Gerer les Niveaux/Prix', enabled: enabled, click: function() {
+  admin.append(new gui.MenuItem({ label: 'Gerer les Métiers et leur Prix', enabled: enabled, click: function() {
         $state.go('manage.level');
   }}));
 
-  admin.append(new gui.MenuItem({ label: 'Gerer les Eleves', enabled: enabled, click: function() {
+  admin.append(new gui.MenuItem({ label: 'Gerer les Employés', enabled: enabled, click: function() {
         $state.go('manage.manageStudent');
   }}));
   admin.append(new gui.MenuItem({ type: 'separator' }));

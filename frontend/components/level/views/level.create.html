@@ -5,13 +5,14 @@
 
       <div class="modal-header">
         <button type="button" class="close" aria-label="Close" ng-click="$hide()"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Créer Niveau</h4>
+        <h4 class="modal-title">Créer Métier</h4>
       </div>
 
   <div class="modal-body">
 
         <form role="form">
-        Niveau:  <input type="text" class="form-control" ng-model="toInserLevel._id"/>
+       Nom du Métier:  <input type="text" class="form-control" ng-model="toInserLevel._id"/>
+       <br/>
 
           <table class="table table-bordered">
             <thead>
@@ -33,7 +34,7 @@
             <tbody>
               <tr>
                 <th>
-                  Scolarité
+                    <i class="fa fa-calendar">Mois 1</i>
                 </th>
                 <td>
                   <input type="number" class="form-control" ng-model="toInserLevel.price.t1.s"/>
@@ -47,7 +48,7 @@
               </tr>
               <tr>
                 <th>
-                  Cantine
+                    <i class="fa fa-calendar">Mois 2</i>
                 </th>
                 <td>
                   <input type="number" class="form-control" ng-model="toInserLevel.price.t1.c"/>
@@ -61,7 +62,7 @@
               </tr>
               <tr>
                 <th>
-                  Panier
+                    <i class="fa fa-calendar">Mois 3</i>
                 </th>
                 <td>
                   <input type="number" class="form-control" ng-model="toInserLevel.price.t1.p"/>
@@ -75,7 +76,8 @@
               </tr>
               <tr>
                 <th>
-                  Garderie
+                     <i class="fa fa-calendar"> Mois-4</i>
+
                 </th>
                 <td>
                   <input type="number" class="form-control" ng-model="toInserLevel.price.t1.g"/>
@@ -87,6 +89,7 @@
                   <input type="number" class="form-control" ng-model="toInserLevel.price.t3.g"/>
                 </td>
               </tr>
+              <!--
               <tr>
                 <th>
                   Activité
@@ -100,7 +103,7 @@
                 <td>
                   <input type="number" class="form-control" ng-model="toInserLevel.price.t3.a"/>
                 </td>
-              </tr>
+              </tr>-->
             </tbody>
 
           </table>
