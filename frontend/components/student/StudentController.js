@@ -45,25 +45,22 @@ $scope.getLevels = function () {
 
         student.products = {
             t1: {
-                s: false,
-                c: false,
-                g: false,
-                p: false,
-                a: false
+                janvier: false,
+                fevrier: false,
+                mars: false,
+                avril: false
             },
             t2: {
-                s: false,
-                c: false,
-                g: false,
-                p: false,
-                a: false
+                mai: false,
+                juin: false,
+                juillet: false,
+                aout: false
             },
             t3: {
-                s: false,
-                c: false,
-                g: false,
-                p: false,
-                a: false
+                septembre: false,
+                octobre: false,
+                novembre: false,
+                decembre: false
             }
         };
 

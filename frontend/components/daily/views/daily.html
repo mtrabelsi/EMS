@@ -59,12 +59,12 @@
 <table ng-table="tableParams"  class="table table-bordered table-hover printable">
 
      <tr ng-repeat="payment in $data" ng-click="showDetail(payment);">
-         <td title="'Niveau'" class="ng-table-group" filter="{ '_levelId': 'select' }"filter-data="levels" sortable="'_levelId'">
+         <td title="'Métier'" class="ng-table-group" filter="{ '_levelId': 'select' }"filter-data="levels" sortable="'_levelId'">
            {{payment._levelId}}
           </td>
-         <td title="'Classe'" class="ng-table-group" filter="{ 'class': 'select' }" filter-data="classes"sortable="'class'">
+         <!--<td title="'Classe'" class="ng-table-group" filter="{ 'class': 'select' }" filter-data="classes"sortable="'class'">
            {{payment.class}}
-          </td>
+          </td>-->
          <td title="'Nom'" class="ng-table-group" filter="{ 'firstname': 'text' }" sortable="'firstname'">
            {{payment.firstname}}
           </td>

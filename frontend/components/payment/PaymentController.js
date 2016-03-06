@@ -137,25 +137,22 @@ paymentModule.controller('PaymentController', function(_, PaymentService, $state
 
           $scope.newlyClickedProducts = {
             t1: {
-                s: false,
-                c: false,
-                g: false,
-                p: false,
-                a: false
+                janvier: false,
+                fevrier: false,
+                mars: false,
+                avril: false
             },
             t2: {
-                s: false,
-                c: false,
-                g: false,
-                p: false,
-                a: false
+                mai: false,
+                juin: false,
+                juillet: false,
+                aout: false
             },
             t3: {
-                s: false,
-                c: false,
-                g: false,
-                p: false,
-                a: false
+                septembre: false,
+                octobre: false,
+                novembre: false,
+                decembre: false
             }
         };
 
@@ -197,9 +194,7 @@ paymentModule.controller('PaymentController', function(_, PaymentService, $state
     //final payment
     $scope.finalPayment = function(student) {
 
-
         $scope.payment.datePayment = moment($scope.payment.datePayment).format("YYYY-MM-DD");
-
 
         $scope.payment.modePay = getModepay();
         $scope.payment.amount.payedAmount = $scope.amount;
@@ -221,7 +216,7 @@ paymentModule.controller('PaymentController', function(_, PaymentService, $state
             $state.go('printOne',{id: idTobePrinted});//go for printing!
 
         }, function(error) {
-            alert("Impossible de mettre à jours l'eleve, detail : " + error);
+            alert("Impossible de mettre à jours l'employé, detail : " + error);
         });
 
         resetScope();

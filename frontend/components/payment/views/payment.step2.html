@@ -3,7 +3,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">
-              
+                   Paiment de Salaire pour:  <b>{{toPayStudent.firstname}} {{toPayStudent.lastname}}</b>
+                  <!--
                     <span ng-class="{'bg-muted': entredAmount()=== 0,
                              'bg-warning': entredAmount() < amount && entredAmount() != 0,
                              'bg-success': entredAmount() === amount,
@@ -16,8 +17,10 @@
                              'text-danger': entredAmount() > amount}">    
                              {{entredAmount()}} 
                     </span>
-
-                  <span class="pull-right space-40">Total à payer : <b>{{amount}} DT</b></span></h4>
+                    -->        
+                  <span class="pull-right space-40"> <b>{{amount}} DT</b></span>
+                 
+                </h4>
             </div>
 
             <div class="modal-body">
@@ -25,6 +28,7 @@
                     Espece:
                     <input type="number" class="form-control" ng-model="payment.amount.brutAmount" />
                     <hr/>
+             <!--    
                     <div class="row">
                         <div class="col-md-6">Numero Cheque:
                             <input type="number" class="form-control" ng-model="toAddCheque.number" />
@@ -73,6 +77,8 @@
                             </td>
                         </tr>
                     </table>
+
+             -->
                 </form>
             </div>
 
@@ -91,7 +97,7 @@
                     
                 
 
-            <button ng-disabled="entredAmount()!=amount||amount==0" type="button" class="btn btn-primary" ng-click="$parent.finalPayment(toPayStudent);$hide();">
+                        <button ng-disabled="entredAmount()!=amount||amount==0" type="button" class="btn btn-primary" ng-click="$parent.finalPayment(toPayStudent);$hide();">
                             <i class="fa fa fa-paypal"></i> Payer
                         </button>
 

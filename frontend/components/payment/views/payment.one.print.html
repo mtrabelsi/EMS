@@ -24,8 +24,8 @@
 <tr><td colspan="2">
         <b>Nom:</b> <span ng-bind="payment.firstname" />
         <br/> <b>Prenom:</b> <span ng-bind="payment.lastname" />
-        <br/> <b>Niveau:</b> <span ng-bind="payment._levelId" /> 
-        <br/> <b>Classe:</b> <span ng-bind="payment.class" />
+        <br/> <b>Métier:</b> <span ng-bind="payment._levelId" /> 
+        <!-- <br/> <b>Classe:</b> <span ng-bind="payment.class" /> -->
         
 </td></tr>
 
@@ -39,11 +39,10 @@
             <table class="table table-bordered">
                 <tr ng-repeat="prod in payment.currentPayedProd.t1">
                     <td>
-                        <span ng-if="prod.product=='a'">Activité</span>
-                        <span ng-if="prod.product=='p'">Panier</span>
-                        <span ng-if="prod.product=='c'">Cantine</span>
-                        <span ng-if="prod.product=='s'">Scolarité</span>
-                        <span ng-if="prod.product=='g'">Garderie</span>
+                        <span ng-if="prod.product=='janvier'">Janvier</span>
+                        <span ng-if="prod.product=='fevrier'">Fevrier</span>
+                        <span ng-if="prod.product=='mars'">Mars</span>
+                        <span ng-if="prod.product=='avril'">Avril</span>
                     </td>    
                     <td>{{prod.price}} DT</td>    
                 </tr>
@@ -56,11 +55,10 @@
           
                 <tr ng-repeat="prod in payment.currentPayedProd.t2">
                     <td>
-                        <span ng-if="prod.product=='a'">Activité</span>
-                        <span ng-if="prod.product=='p'">Panier</span>
-                        <span ng-if="prod.product=='c'">Cantine</span>
-                        <span ng-if="prod.product=='s'">Scolarité</span>
-                        <span ng-if="prod.product=='g'">Garderie</span>
+                        <span ng-if="prod.product=='mai'">Mai</span>
+                        <span ng-if="prod.product=='juin'">Juin</span>
+                        <span ng-if="prod.product=='juillet'">Juillet</span>
+                        <span ng-if="prod.product=='aout'">Aout</span>
                     </td>    
                     <td>{{prod.price}} DT</td>    
                 </tr>
@@ -73,11 +71,10 @@
     
                 <tr ng-repeat="prod in payment.currentPayedProd.t3">
                     <td>
-                        <span ng-if="prod.product=='a'">Activité</span>
-                        <span ng-if="prod.product=='p'">Panier</span>
-                        <span ng-if="prod.product=='c'">Cantine</span>
-                        <span ng-if="prod.product=='s'">Scolarité</span>
-                        <span ng-if="prod.product=='g'">Garderie</span>
+                        <span ng-if="prod.product=='septembre'">Septembre</span>
+                        <span ng-if="prod.product=='octobre'">Octobre</span>
+                        <span ng-if="prod.product=='novembre'">Novembre</span>
+                        <span ng-if="prod.product=='decembre'">Decembre</span>
                     </td>    
                     <td>{{prod.price}} DT</td>    
                 </tr>

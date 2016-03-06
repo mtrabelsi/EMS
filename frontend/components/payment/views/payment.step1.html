@@ -5,7 +5,7 @@
 
       <div class="modal-header">
         <button type="button" class="close" aria-label="Close" ng-click="$hide()"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Produits pour :  <b>{{toPayStudent.firstname}} {{toPayStudent.lastname}}</b></h4>
+        <h4 class="modal-title">Paiment de Salaire pour:  <b>{{toPayStudent.firstname}} {{toPayStudent.lastname}}</b></h4>
       </div>
 
   <div class="modal-body">
@@ -34,15 +34,15 @@
                   Mois 1
                 </th>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.s" ng-click="confirmProduct('t1','s')" type="checkbox" value="t1.s"></label> Janvier
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.janvier" ng-click="confirmProduct('t1','janvier')" type="checkbox" value="t1.janvier"></label> Janvier
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.s||!toPayStudent.products.t1.s" ng-click="confirmProduct('t2','s')" type="checkbox" value="t2.s"></label> Mai
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.mai||!toPayStudent.products.t1.mai" ng-click="confirmProduct('t2','mai')" type="checkbox" value="t2.mai"></label> Mai
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.s||!toPayStudent.products.t2.s" ng-click="confirmProduct('t3','s')" type="checkbox" value="t3.s"></label> Septembre
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.septembre||!toPayStudent.products.t2.septembre" ng-click="confirmProduct('t3','septembre')" type="checkbox" value="t3.septembre"></label> Septembre
 
                 </td>
               </tr>
@@ -51,15 +51,15 @@
                   Mois 2
                 </th>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.c" ng-click="confirmProduct('t1','c')" type="checkbox" value="t1.c"></label> Fevrier
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.fevrier" ng-click="confirmProduct('t1','fevrier')" type="checkbox" value="t1.fevrier"></label> Fevrier
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.c" ng-click="confirmProduct('t2','c')" type="checkbox" value="t2.c"></label> Juin
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.juin" ng-click="confirmProduct('t2','juin')" type="checkbox" value="t2.juin"></label> Juin
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.c" ng-click="confirmProduct('t3','c')" type="checkbox" value="t3.c"></label> Octobre
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.octobre" ng-click="confirmProduct('t3','octobre')" type="checkbox" value="t3.octobre"></label> Octobre
 
                 </td>
               </tr>
@@ -68,15 +68,15 @@
                   Mois 3
                 </th>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.p" ng-click="confirmProduct('t1','p')" type="checkbox" value="t1.p"></label> Mars
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.mars" ng-click="confirmProduct('t1','mars')" type="checkbox" value="t1.mars"></label> Mars
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.p" ng-click="confirmProduct('t2','p')" type="checkbox" value="t2.p"></label> Juillet
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.juillet" ng-click="confirmProduct('t2','juillet')" type="checkbox" value="t2.juillet"></label> Juillet
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.p" ng-click="confirmProduct('t3','p')" type="checkbox" value="t3.p"></label> Novembre
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.novembre" ng-click="confirmProduct('t3','novembre')" type="checkbox" value="t3.novembre"></label> Novembre
 
                 </td>
               </tr>
@@ -85,34 +85,18 @@
                   Mois 4
                 </th>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.g" ng-click="confirmProduct('t1','g')" type="checkbox" value="t1.g"></label> Avril
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.avril" ng-click="confirmProduct('t1','avril')" type="checkbox" value="t1.avril"></label> Avril
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.g" ng-click="confirmProduct('t2','g')" type="checkbox" value="t2.g"></label> Aout
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.aout" ng-click="confirmProduct('t2','aout')" type="checkbox" value="t2.aout"></label> Aout
 
                 </td>
                 <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.g" ng-click="confirmProduct('t3','g')" type="checkbox" value="t3.g"></label> Decembre
+                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.decembre" ng-click="confirmProduct('t3','decembre')" type="checkbox" value="t3.decembre"></label> Decembre
 
                 </td>
               </tr>
-             <!-- 
-              <tr>
-                <th>
-                  Activité
-                </th>
-                <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t1.a" ng-click="confirmProduct('t1','a')" type="checkbox" value="t1.a"></label>
-                </td>
-                <td>
-                    <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t2.a" ng-click="confirmProduct('t2','a')" type="checkbox" value="t2.a"></label>
-                </td>
-                <td>
-                  <label class="btn btn-default"><input ng-disabled="toPayStudent.products.t3.a" ng-click="confirmProduct('t3','a')" type="checkbox" value="t3.a"></label>
-                </td>
-              </tr>
-              -->
             </tbody>
 
           </table>
